@@ -13,13 +13,6 @@
 	--page-padding: 2rem 3rem;
 }
 
-@font-face {
-	font-family: 'blackoutregular';
-	src: url('../fonts/blackout-webfont.woff2') format('woff2'),
-	     url('../fonts/blackout-webfont.woff') format('woff');
-	font-weight: normal;
-	font-style: normal;
-}
 
 @font-face {
     font-family: 'AlegrosPersonalUse-qZL5qr';
@@ -28,13 +21,7 @@
     font-style: normal;
 }
 
-@font-face {
-    font-family: 'h19a_lunaluna';
-    src: url('../fonts/h19a-luna-webfont.woff2') format('woff2'),
-         url('../fonts/h19a-luna-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
+
 
 @font-face {
     font-family: 'capsule3regular';
@@ -275,7 +262,11 @@ a:focus-visible {
 	font-weight: 400;
 }
 
-
+.font-1 {
+	font-family: 'AlegrosPersonalUse-qZL5qr';
+    font-weight: 800;
+    font-style: normal;
+}
 
 .font-9 {
 	font-family: gigantic, sans-serif;
@@ -568,6 +559,7 @@ hr {border:2px solid #46413C; width: 100%; margin:0 auto;}
 	margin-bottom: 0;
 	overflow-y: hidden;
 	overflow-x: hidden;
+	
 }
 
 
@@ -577,12 +569,17 @@ hr {border:2px solid #46413C; width: 100%; margin:0 auto;}
 
 }
 
-.left {
-	text-align:left;
-
+.margin {
+	margin-top: -20%;
 }
 
-.right {
-	text-align:right;
-
+.bottom-brands {
+	position: relative;
+	margin-bottom: 0; /* Adjust the margin to position it above the footer */
+	text-align: center; /* Center the image horizontally */
+}
+  
+.bottom-brands img {
+	max-width: 100%;
+	height: auto;
 }
