@@ -140,9 +140,9 @@ const applyCustomEffect_9 = (contentElement) => {
         }
     })
     .fromTo(clipPath, {
-        xPercent: 50,
+        xPercent: 400,
     }, {
-        xPercent: -50
+        xPercent: 200
     }, 0)
     .fromTo(poster, {
         filter: 'brightness(140%) hue-rotate(300deg)',
@@ -152,9 +152,9 @@ const applyCustomEffect_9 = (contentElement) => {
         rotation: 7
     }, 0)
     .fromTo(posterInner, {
-        scale: 1
+        scale: 0.8
     }, {
-        scale: 1.2
+        scale: 1
     }, 0)
     .fromTo(texts, {
         transformOrigin: '0% 0%',
@@ -162,7 +162,7 @@ const applyCustomEffect_9 = (contentElement) => {
     }, {
         ease: 'none',
         scale: () => gsap.utils.random(0, 0.5),
-        yPercent: () => gsap.utils.random(-40, 40),
+        yPercent: () => gsap.utils.random(-20, 40),
         rotation: () => gsap.utils.random(-15, 15)
     }, 0);
 
@@ -180,21 +180,6 @@ const scroll = () => {
                 break;
             case 2:
                 applyCustomEffect_3(contentElement);
-                break;
-            case 3:
-                applyCustomEffect_4(contentElement);
-                break;
-            case 4:
-                applyCustomEffect_5(contentElement);
-                break;
-            case 5:
-                applyCustomEffect_6(contentElement);
-                break;
-            case 6:
-                applyCustomEffect_7(contentElement);
-                break;
-            case 7:
-                applyCustomEffect_8(contentElement);
                 break;
             case 8:
                 applyCustomEffect_9(contentElement);

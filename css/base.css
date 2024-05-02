@@ -22,9 +22,8 @@
 }
 
 @font-face {
-    font-family: 'hacked_crtregular';
-    src: url('../fonts/hacked_crt-webfont.woff2') format('woff2'),
-         url('../fonts/hacked_crt-webfont.woff') format('woff');
+    font-family: 'AlegrosPersonalUse-qZL5qr';
+    src: url('../fonts/AlegrosPersonalUse-qZL5q.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -44,6 +43,9 @@
     font-weight: normal;
     font-style: normal;
 }
+
+
+
 
 h1 {
     color: rgba(255, 255, 255, 0.8);
@@ -267,46 +269,13 @@ a:focus-visible {
 	background-attachment: fixed;
 }
 
-.font-1 {
-	font-family: "blackoutregular";
-	font-weight: 400;
-}
-
-.font-2 {
-	font-family: "hacked_crtregular", sans-serif;
-	font-weight: 400;
-	text-transform: uppercase;
-}
-
-.font-3 {
-	font-family: "macula-solid", sans-serif;
-	font-weight: 500;
-}
-
-.font-4 {
-	font-family: "macula-line", sans-serif;
-	font-weight: 400;
-}
-
-.font-5 {
-	font-family: "octothorpe-pe", sans-serif;
-	font-weight: 400;
-}
-
-.font-6 {
-	font-family: "h19a_lunaluna", sans-serif;
-	font-weight: 400;
-}
 
 .font-7 {
 	font-family: "capsule3regular", sans-serif;
 	font-weight: 400;
 }
 
-.font-8 {
-	font-family: "flegrei", sans-serif;
-	font-weight: 400;
-}
+
 
 .font-9 {
 	font-family: gigantic, sans-serif;
@@ -319,7 +288,7 @@ a:focus-visible {
 }
 
 .size-2 {
-	font-size: 50vw;
+	font-size: 8vw;
 }
 
 .size-3 {
@@ -327,7 +296,7 @@ a:focus-visible {
 }
 
 .size-4 {
-	font-size: 20vh;
+	font-size: 25vw;
 }
 
 svg {
@@ -351,11 +320,6 @@ svg text {
 	line-height: 1;
 }
 
-.credits {
-	font-size: 2rem;
-	text-align: center;
-	margin: 50vh auto;
-}
 
 .card-wrap {
 	margin-top: 5vh;
@@ -547,4 +511,78 @@ button:hover {
 }
 
 
+/* for selected works */
+/**************************/
+#parallax-portfolio .parallax-one {padding-top: 80px; padding-bottom: 80px; overflow: hidden; position: relative; width: 100%; background-image: url(../img/ptfolio1.jpg); background-attachment: fixed; background-size: cover; -moz-background-size: cover; -webkit-background-size: cover; background-repeat: no-repeat; background-position: top center;}
+#parallax-portfolio .parallax-two {padding-top: 80px; padding-bottom: 80px; overflow: hidden; position: relative; width: 100%; background-image: url(../img/ptfolio2.jpg); background-attachment: fixed; background-size: cover; -moz-background-size: cover; -webkit-background-size: cover; background-repeat: no-repeat; background-position: center center;}
+#parallax-portfolio .parallax-three {padding-top: 80px; padding-bottom: 80px; overflow: hidden; position: relative; width: 100%; background-image: url(../img/ptfolio3.jpg); background-attachment: fixed; background-size: cover; -moz-background-size: cover; -webkit-background-size: cover; background-repeat: no-repeat; background-position: center center;}
+#parallax-portfolio .parallax-four {padding-top: 80px; padding-bottom: 80px; overflow: hidden; position: relative; width: 100%; background-image: url(../img/ptfolio4.jpg); background-attachment: fixed; background-size: cover; -moz-background-size: cover; -webkit-background-size: cover; background-repeat: no-repeat; background-position: center center;}
+#parallax-portfolio .parallax-five {padding-top: 80px; padding-bottom: 80px; overflow: hidden; position: relative; width: 100%; background-image: url(../img/ptfolio5.jpg); background-attachment: fixed; background-size: cover; -moz-background-size: cover; -webkit-background-size: cover; background-repeat: no-repeat; background-position: center center;}
 
+
+
+.number {
+	font-family: 'Orbitron';
+	font-weight: 500;
+	font-style: normal;
+	position:absolute;
+	top: 15px;
+	left: 20px;
+	font-size: 2em;
+}
+
+.alegro {
+    font-family: 'AlegrosPersonalUse-qZL5qr' !important;
+    font-size: 6em;
+    text-align: right;
+    padding-right: 20px;
+    text-transform: uppercase;
+    color: white;
+    mix-blend-mode: difference; /* Blend mode for contrast */
+}
+
+
+
+/* Extras */
+/**************************/
+hr {border:2px solid #46413C; width: 100%; margin:0 auto;}
+
+.portfolio-title {
+	top: 70px;
+	color: rgba(255, 255, 255, 0.8);
+    font-size: 8vw;
+    font-weight: 400;
+    font-family: 'Kalnia', serif;
+	text-align: left;
+	text-transform: uppercase;
+}
+
+.evencent {
+	padding-left: 5%;
+	padding-right: 5%;
+}
+
+.brown {
+	background-color: #46413C;
+	color:silver;
+	margin-bottom: 0;
+	overflow-y: hidden;
+	overflow-x: hidden;
+}
+
+
+
+.center {
+	text-align:center;
+
+}
+
+.left {
+	text-align:left;
+
+}
+
+.right {
+	text-align:right;
+
+}
