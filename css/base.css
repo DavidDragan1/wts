@@ -45,6 +45,10 @@ h1 {
 	text-transform: uppercase;
 }
 
+h2 {
+	font-family: 'Kalnia', serif;
+	text-transform: none;
+}
 
 
 html, body {
@@ -120,10 +124,18 @@ a:hover {
 
 
 .content {
-	min-height: 60vh;
+	height: 80vh;
 	margin: 15vh auto;
 	display: grid;
 	place-items: center;
+}
+
+.content-footer {
+
+	margin: 15vh auto;
+	display: grid;
+	place-items: center;
+	margin-bottom: -30vh;
 }
 
 .content--flex {
@@ -301,6 +313,7 @@ button {
 	background-color: #46413C;
 	width:100%;
 	color:bisque;
+	font-family: 'Kalnia', serif;
 }
 
 .glass-pane {
@@ -394,6 +407,8 @@ button {
 	h4 {
 		font-size: 12vw!important;
 	}
+
+
 }
 
 
@@ -543,7 +558,7 @@ hr {border:2px solid #46413C; width: 100%; margin:0 auto;}
 	margin-bottom: 0;
 	overflow-y: hidden;
 	overflow-x: hidden;
-	
+	margin-top: -20px;
 }
 
 
@@ -559,7 +574,7 @@ hr {border:2px solid #46413C; width: 100%; margin:0 auto;}
 
 .bottom-brands {
 	position: relative;
-	margin-bottom: 0; /* Adjust the margin to position it above the footer */
+	margin-bottom: 0; 
 	text-align: center; /* Center the image horizontally */
 }
   

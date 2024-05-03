@@ -53,12 +53,13 @@
 			<div class="content">
 				<svg> 
 					<clipPath id="clip">
-						<text x="0ch" y="0.95em" class="line-1 font-7 size-3">w</text>
-						<text x="1ch" y="0.95em" class="line-1 font-7 size-3">t</text>
-						<text x="2ch" y="0.95em" class="line-1 font-7 size-3">s</text>
-						<text x="3ch" y="0.95em" class="line-1 font-7 size-3">.</text>
-						<text x="4ch" y="0.95em" class="line-1 font-7 size-3">w</text>
-						<text x="5ch" y="0.95em" class="line-1 font-7 size-3">t</text>
+						<text x="0ch" y="0.95em" class="line-1 font-7 size-2"> </text>
+						<text x="1ch" y="0.95em" class="line-1 font-7 size-3">w</text>
+						<text x="2ch" y="0.95em" class="line-1 font-7 size-3">t</text>
+						<text x="3ch" y="0.95em" class="line-1 font-7 size-3">s</text>
+						<text x="4ch" y="0.95em" class="line-1 font-7 size-3">.</text>
+						<text x="5ch" y="0.95em" class="line-1 font-7 size-3">w</text>
+						
 					</clipPath>
 					<clipPath id="clip-0">
 						<text x="0ch" y="0.95em" class="line-2 font-7 size-3">w</text>
@@ -80,7 +81,7 @@
 				<h4>Our Mission</h4>
 				<p>A solemn dance with the unknown;<br/> to design is to master the delicate synthesis of form and function.</p>
 				<p><em>We seek no less.</em></p>
-				<button href="about.html"style="width:100%">Find Out More</button>
+				<button onclick="about()" style="width:100%">Find Out More</button>
 			</div>
 			<!-- about end -->
 
@@ -215,8 +216,13 @@
 					x.className = x.className.replace(" w3-show", "");
 				}
 			}
+
 			function redirectToLink() {
 				window.location.href = "portfolio.html";
+			}
+
+			function about() {
+				window.location.href = "about.html";
 			}
 		</script>
 	</body>
