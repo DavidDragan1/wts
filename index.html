@@ -9,6 +9,11 @@
 		<meta name="author" content="wts." />
 		<link rel="shortcut icon" href="favicon.ico">
 		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+		<!-- google fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Kalnia:wght@100..700&display=swap" rel="stylesheet">
 		
 		<script>
 		  (function(d) {
@@ -49,47 +54,53 @@
 
 		<!-- main content -->
 		<main>
-
+			<a href="start.html" class="brownbutton">Start a Project</a>
 			<div class="content">
 				<svg> 
 					<clipPath id="clip">
-						<text x="0ch" y="0.95em" class="line-1 font-7 size-2"> </text>
+						<text x="0ch" y="0.95em" class="line-1 font-7 size-4"> </text>
 						<text x="1ch" y="0.95em" class="line-1 font-7 size-3">w</text>
 						<text x="2ch" y="0.95em" class="line-1 font-7 size-3">t</text>
 						<text x="3ch" y="0.95em" class="line-1 font-7 size-3">s</text>
 						<text x="4ch" y="0.95em" class="line-1 font-7 size-3">.</text>
-						<text x="5ch" y="0.95em" class="line-1 font-7 size-3">w</text>
+					
 						
 					</clipPath>
 					<clipPath id="clip-0">
-						<text x="0ch" y="0.95em" class="line-2 font-7 size-3">w</text>
-						<text x="1ch" y="0.95em" class="line-2 font-7 size-3">t</text>
-						<text x="2ch" y="0.95em" class="line-2 font-7 size-3">s</text>
-						<text x="3ch" y="0.95em" class="line-2 font-7 size-3">.</text>
-						<text x="4ch" y="0.95em" class="line-2 font-7 size-3">w</text>
-						<text x="5ch" y="0.95em" class="line-2 font-7 size-3">t</text>
+						<text x="0ch" y="0.95em" class="line-2 font-7 size-3"> </text>
+						<text x="1ch" y="0.95em" class="line-2 font-7 size-3">w</text>
+						<text x="2ch" y="0.95em" class="line-2 font-7 size-3">t</text>
+						<text x="3ch" y="0.95em" class="line-2 font-7 size-3">s</text>
+						<text x="4ch" y="0.95em" class="line-2 font-7 size-3">.</text>
+						<text x="5ch" y="0.95em" class="line-2 font-7 size-3"> </text>
 					</clipPath>
 				</svg>
 				<div class="poster poster--half" style="clip-path:url(#clip);--offset-x:10%;--offset-y:10%">
-					<div class="poster__inner" style="background-image:url(img/1.jpg);"></div>
-				</div>
-				<div class="poster poster--half" style="clip-path:url(#clip-0);--offset-x:10%;--offset-y:10%">
 					<div class="poster__inner" style="background-image:url(img/2.jpg);"></div>
 				</div>
+				<div class="poster poster--half" style="clip-path:url(#clip-0);--offset-x:10%;--offset-y:10%">
+					<div class="poster__inner" style="background-image:url(img/1.jpg);"></div>
+				</div>
+				<div class="kvp">
+					We're a Creative Design Studio Making the <b>W</b>eb <b>W</b>orth <span style="text-decoration: line-through;">W</span><em><b>S</b>urfing.</em>
+				</div>
 			</div>
-			<div class="content content--text">
-				<h4>Our Mission</h4>
-				<p>A solemn dance with the unknown;<br/> to design is to master the delicate synthesis of form and function.</p>
-				<p><em>We seek no less.</em></p>
-				<button onclick="about()" style="width:100%">Find Out More</button>
-			</div>
+			
+			<section class="w3-row">
+				<div class=" w3-half encapsule">
+					<div class=" abt-container">
+						<img src="img/4.jpg">
+					</div>
+				</div>
+				
+				<div class="w3-half content content--text">
+					<h4>Our Mission</h4>
+					<p>A solemn dance with the unknown;<br/> to design is to master the delicate synthesis of form and function.</p>
+					<p><em>We seek no less.</em></p>
+					<button onclick="about()" style="width:100%">Find Out More</button>
+				</div>
+			</section>
 			<!-- about end -->
-
-			<!-- Services section start -->
-
-
-
-			<!-- services end -->
 
 			<!-- brands strip -->
 			<section class="strip">
@@ -128,10 +139,54 @@
 						<img class="w3-third img-margin" src="img/ptfolio2.jpg">
 						<img class="w3-third img-margin" src="img/ptfolio3.jpg">
 					</div>
-				
 				</div>
-			
 			</section>
+
+			<!-- Services section start -->
+			<section class="parallax2">
+				<div class="glass-pane">
+					<h1>Our Services</h1>
+					<div class="w3-row">
+						<div class="w3-half w3-center">
+							<div class="services-box">
+								<div class="services-container">
+									<h2 class="services-header">Brand Identity & Digital Strategy</h2>
+									<p class="services-txt">
+										Craft a compelling brand identity and digital strategy that resonates with your target audience. Our seasoned strategists work closely with you to define your brand's voice, values, and vision, ensuring cohesive messaging across all digital touchpoints to foster brand recognition and loyalty.
+									</p>
+								</div>
+							</div>
+							<div class="services-box">
+								<div class="services-container">
+									<h2 class="services-header">User Experience (UX) Optimisation</h2>
+									<p class="services-txt">
+										Elevate user satisfaction and engagement with our UX optimization services. Through meticulous user research, wireframing, and prototyping, we design intuitive and user-centric interfaces that streamline navigation, enhance usability, and delight users at every interaction, fostering long-lasting connections with your brand.
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="w3-half w3-center">
+							<div class="services-box">
+								<div class="services-container">
+									<h2 class="services-header">Bespoke Websites & E-commerce</h2>
+									<p class="services-txt">
+										Experience the pinnacle of digital craftsmanship with our tailored web and e&#8209;commerce solutions. From bespoke websites reflecting your brand's uniqueness to e&#8209;commerce platforms driving conversions, we blend cutting-edge design with seamless functionality for impactful online experiences.
+									</p>
+								</div>
+							</div>
+							<div class="services-box">
+								<div class="services-container">
+									<h2 class="services-header">Analytics, Performance & SEO</h2>
+									<p class="services-txt">
+										Leveraging advanced analytics tools and methodologies, we track key metrics, analyse user interactions, and identify opportunities for optimisation, empowering you to make informed decisions and achieve your business objectives effectively. <br>Our comprehensive SEO packages ensure you stay on top of the competition.
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>	
+			</section>
+			<!-- services end -->
 			
 
 			<!-- contact -->
@@ -219,6 +274,10 @@
 
 			function redirectToLink() {
 				window.location.href = "portfolio.html";
+			}
+
+			function redirectToLink() {
+				window.location.href = "services.html";
 			}
 
 			function about() {

@@ -229,7 +229,7 @@ a:hover {
 }
 
 .size-2 {
-	font-size: 8vw;
+	font-size: 18rem;
 }
 
 .size-3 {
@@ -351,7 +351,107 @@ button {
     overflow-y: auto;
 }
 
+.parallax2 {
+    /* photo background */
+    background-image: url(../img/4.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* Add this line */
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 120vh;
+    
+    /* Additional styles for parallax effect */
+    perspective: 1000px; /* Adjust as needed */
+    overflow-x: hidden;
+    overflow-y: auto;
+}
 
+
+.services-box{
+	user-select:none;
+	width: 98%;
+	border: 1px solid #ffffff22;
+	backdrop-filter: blur(10px) saturate(100%);
+    -webkit-backdrop-filter: blur(10px) saturate(100%);
+    background-color: rgba(17, 25, 40, 0.25);
+    border-radius: 12px;
+
+	box-shadow: 0 7px 20px 5px #00000088;
+	overflow: hidden;
+	transition: .5s all;
+	margin:2%;
+
+	
+	::before{
+	  position: fixed;
+	  content: "";
+	  box-shadow: 0 0 100px 40px #ffffff08;
+	  top: -10%;
+	  left: -100%;
+	  transform: rotate(-45deg);
+	  height: 60rem;
+	  transition: .7s all;
+	}
+	&:hover{
+	  border: 1px solid #ffffff44;
+	  box-shadow: 0 7px 50px 10px #000000aa;
+	  transform: scale(1.015);
+	  filter: brightness(1.3);
+	  ::before{
+		filter: brightness(.5);
+		top: -100%;
+		left: 200%;
+	  }
+	}
+  }
+
+  .services-txt {
+	margin-top:.5rem;
+	margin-bottom: 1rem;
+	margin-left:2rem;
+	margin-right: 2rem;
+	color: #cfcfcf;
+	text-align: justify;
+	hyphens: none;
+  }
+  
+  /* Cheeky CHAD media queries for vertical stacking... */
+  /* For smaller screens */
+  @media (max-width: 768px) {
+	.services-container {
+	  flex-direction: column; 
+	  align-items: center; 
+	}
+  
+	.services-box {
+	  width: 90%; 
+	  margin: 10px auto;
+	}
+  }
+  
+  /* For slightly larger screens */
+  @media (max-width: 900px) {
+	.services-container {
+	  display: flex;
+	  flex-direction: column;
+	  align-items: center;
+	  justify-content: center;
+	  text-align: center;
+	  height: 80%;
+	  width: 90%;
+	  margin-top: 20%;
+	  margin-bottom: 10%;
+	}
+	
+	.parallax2 {
+	  height: auto;
+	}
+  }
+  
+  
 @media screen and (min-width: 53em) {
 		.frame {
 			grid-template-columns: auto auto auto 1fr;
@@ -581,4 +681,56 @@ hr {border:2px solid #46413C; width: 100%; margin:0 auto;}
 .bottom-brands img {
 	max-width: 100%;
 	height: auto;
+}
+
+
+.kvp {
+	font-family: 'Kalnia', serif;
+	font-size: 26px;
+	position:absolute;
+	margin-top: 20%;
+	text-align: center;
+	
+}
+
+.encapsule {
+	display: flex;
+    justify-content: center;
+    align-items:center;
+	margin-top: 250px;
+}
+
+.abt-container {
+    width: 200px; /* Adjust width as needed */
+    height: 400px; /* Adjust height as needed */
+    overflow: hidden;
+    border-radius: 200px; /* Half of the height to create a pill shape */
+}
+
+.abt-container img {
+    width: 100%;
+    height: auto;
+
+}
+
+
+
+.brownbutton {
+	position: fixed;
+    top: 14px; /* Adjust top position as needed */
+    right: 20px; /* Adjust right position as needed */
+    padding: 10px 20px; /* Adjust padding as needed */
+    background-color:#46413C; /* Brown color */
+    color: #fff; /* White text color */
+    border: none;
+    border-radius: 50px; /* Adjust border radius as needed */
+    cursor: pointer;
+	z-index: 200;
+	font-family: 'Kalnia', serif;
+}
+
+.brownbutton:hover {
+    background-color: silver; /* Darker brown color on hover */
+	color:black;
+	font-style:oblique;
 }
