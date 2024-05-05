@@ -40,7 +40,9 @@
 				</a>
 				<a href="about.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">About</a>
 				<a href="portfolio.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Portfolio</a>
-				<a href="mailto:daviddragan@protonmail.com?subject=Inquiry&body=Greetings%20wts.%20team,%0A%0AJust%20wanted%20to%20say%20hello.%0A%0ABest%20regards,%0A[Your%20Name]" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Contact <i class="bi bi-arrow-up-right"></i></a>
+				<a href="index.html#services" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Services</a>
+				<a href="index.html#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Contact</a>
+				
 
 			</div>
 		</div>
@@ -49,12 +51,15 @@
 			<a href="index.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Home</a>
 			<a href="about.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">About Us</a>
 			<a href="portfolio.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Portfolio</a>
-			<a href="mailto:daviddragan@protonmail.com?subject=Inquiry&body=Greetings%20wts.%20team,%0A%0AJust%20wanted%20to%20say%20hello.%0A%0ABest%20regards,%0A[Your%20Name]" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Contact <i class="bi bi-arrow-up-right"></i></a>
+			<a href="index.html#services" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Services</a>
+			<a href="index.html#contact" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Contact </a>
+			<a href="start.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Start a Project</a>
 		</div>
+
 
 		<!-- main content -->
 		<main>
-			<a href="start.html" class="brownbutton">Start a Project</a>
+			<a href="start.html" class="brownbutton w3-hide-small">Start a Project</a>
 			<div class="content">
 				<svg> 
 					<clipPath id="clip">
@@ -103,7 +108,7 @@
 			<!-- about end -->
 
 			<!-- brands strip -->
-			<section class="strip">
+			<section class="strip w3-card w3-round-large">
 				<div class="row">
 					<center>
 					  <div class="column">
@@ -133,7 +138,8 @@
 			<section class="parallax">
 				<div class="glass-pane">
 					<a onclick="redirectToLink()" class="full-link"></a>
-					<h1>Explore Our Portfolio</h1>
+					<h1 class="h1margin">Explore Our Portfolio</h1>
+					
 					<div class="w3-row ">
 						<img class="w3-third img-margin" src="img/ptfolio1.jpg">
 						<img class="w3-third img-margin" src="img/ptfolio2.jpg">
@@ -146,41 +152,34 @@
 			<section class="parallax2">
 				<div class="glass-pane">
 					<h1>Our Services</h1>
-					<div class="w3-row">
+					<h3>How we can help you flourish</h3>
+					<div class="w3-row" >
 						<div class="w3-half w3-center">
 							<div class="services-box">
-								<div class="services-container">
-									<h2 class="services-header">Brand Identity & Digital Strategy</h2>
-									<p class="services-txt">
-										Craft a compelling brand identity and digital strategy that resonates with your target audience. Our seasoned strategists work closely with you to define your brand's voice, values, and vision, ensuring cohesive messaging across all digital touchpoints to foster brand recognition and loyalty.
-									</p>
-								</div>
+								<h2 >Brand Identity & Digital Strategy</h2>
+								<p class="services-txt">
+									Craft a compelling brand identity and digital strategy that resonates with your target audience. Our seasoned strategists work closely with you to define your brand's voice, values, and vision, ensuring cohesive messaging across all digital touchpoints to foster brand recognition and loyalty.
+								</p>
 							</div>
 							<div class="services-box">
-								<div class="services-container">
-									<h2 class="services-header">User Experience (UX) Optimisation</h2>
-									<p class="services-txt">
-										Elevate user satisfaction and engagement with our UX optimization services. Through meticulous user research, wireframing, and prototyping, we design intuitive and user-centric interfaces that streamline navigation, enhance usability, and delight users at every interaction, fostering long-lasting connections with your brand.
-									</p>
-								</div>
+								<h2 >User Experience (UX) Optimisation</h2>
+								<p class="services-txt">
+									Elevate user satisfaction and engagement with our UX optimisation services. Through meticulous user research, wireframing, and prototyping, we design intuitive and user-centric interfaces that streamline navigation, enhance usability, and delight users at every interaction.
+								</p>
 							</div>
 						</div>
 						<div class="w3-half w3-center">
 							<div class="services-box">
-								<div class="services-container">
-									<h2 class="services-header">Bespoke Websites & E-commerce</h2>
-									<p class="services-txt">
-										Experience the pinnacle of digital craftsmanship with our tailored web and e&#8209;commerce solutions. From bespoke websites reflecting your brand's uniqueness to e&#8209;commerce platforms driving conversions, we blend cutting-edge design with seamless functionality for impactful online experiences.
-									</p>
-								</div>
+								<h2>Bespoke Websites & E-commerce</h2>
+								<p class="services-txt">
+									Experience the pinnacle of digital craftsmanship with our tailored web and e&#8209;commerce solutions. From bespoke websites reflecting your brand's uniqueness to e&#8209;commerce platforms driving conversions, we blend cutting-edge design with seamless functionality for impactful online experiences.
+								</p>
 							</div>
 							<div class="services-box">
-								<div class="services-container">
-									<h2 class="services-header">Analytics, Performance & SEO</h2>
-									<p class="services-txt">
-										Leveraging advanced analytics tools and methodologies, we track key metrics, analyse user interactions, and identify opportunities for optimisation, empowering you to make informed decisions and achieve your business objectives effectively. <br>Our comprehensive SEO packages ensure you stay on top of the competition.
-									</p>
-								</div>
+								<h2 >Analytics, Performance & SEO</h2>
+								<p class="services-txt">
+									Leveraging advanced analytics tools and methodologies, we track key metrics, analyse user interactions, and identify opportunities for optimisation, empowering you to make informed decisions and achieve your business objectives effectively. <br>Our comprehensive SEO packages ensure you stay on top of the competition.
+								</p>
 							</div>
 						</div>
 					</div>
@@ -190,15 +189,37 @@
 			
 
 			<!-- contact -->
-			<div class="content content--text">
-				<h4>Contact</h4>
-				<p>You can view our portfolio or get in touch via our contact form </p>
-				<p></p>
-				<div class="inline">
-					<button href="portfolio.html">Portfolio</button>
-					<button onclick="sendEmail()">Contact <i class="bi bi-arrow-up-right"></i></button>
+			<section id="contact" class="w3-row">
+				<div class="w3-half">
+					<form class="form-margin" target="_blank" action="https://formsubmit.co/daviddragan377@gmail.com" method="POST">
+						<div class="w3-col w3-center">
+							<div class="row">
+								<input type="text" name="name" class="form-control" placeholder=" Your Name" required>
+							</div>
+							<div class="row">
+								<input type="email" name="email" class="form-control" placeholder=" Email Address" required>
+							</div>
+							<div class="row">
+								<input type="tel" name="phone" class="form-control" placeholder=" Phone Number" required>
+							</div>
+							
+							<div class="row w3-center">
+								<button type="submit" style="background-color:#46413C"class="form-control">Submit</button>
+							</div>
+						</div>
+					</form>
 				</div>
-			</div>
+
+				<div class="w3-half content content--text">
+					<h4>Contact</h4>
+					<p>Get in touch with us through e-mail, call, or the contact form.</p>
+					<p></p>
+					<div class="inline">
+						<button onclick="call()">Call<i class="bi bi-arrow-up-right"></i></button>
+						<button onclick="sendEmail()">Email<i class="bi bi-arrow-up-right"></i></button>
+					</div>
+				</div>
+			</section>
 
 		</main>
 		
@@ -282,6 +303,10 @@
 
 			function about() {
 				window.location.href = "about.html";
+			}
+
+			function call() {
+				window.location.href = "tel:+44735668270";
 			}
 		</script>
 	</body>

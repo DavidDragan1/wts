@@ -40,8 +40,8 @@ h1 {
     font-weight: 500;
     font-family: 'AlegrosPersonalUse-qZL5qr', serif;
     position: relative; /* Position the element absolutely */
-    top: -15px; /* Position at the top of its container */
-	margin-bottom: 10vh;
+    /* top: -15px; Position at the top of its container */
+	
 	text-transform: uppercase;
 }
 
@@ -49,6 +49,15 @@ h2 {
 	font-family: 'Kalnia', serif;
 	text-transform: none;
 }
+
+h3 {
+	font-family: 'Kalnia', serif;
+	text-transform: uppercase;
+	font-size: 18px;
+	font-weight: 300;
+	color: rgba(255, 255, 255, 0.6);
+}
+
 
 
 html, body {
@@ -113,14 +122,9 @@ a:hover {
 	outline: none;
 }
 
-
-
-
-
-.frame #cdawrap {
-  justify-self: start;
+.h1margin {
+	margin-bottom: 4vw;
 }
-
 
 
 .content {
@@ -296,6 +300,13 @@ svg text {
 	justify-content: space-between;
 }
 
+.inline {
+	width:100%;
+	display: flex;
+	justify-content: space-between;
+}
+
+
 button {
 	color:bisque;
 
@@ -343,7 +354,7 @@ button {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 120vh;
+    min-height: 120vh;
     
     /* Additional styles for parallax effect */
     perspective: 1000px; /* Adjust as needed */
@@ -361,7 +372,7 @@ button {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 120vh;
+    min-height: 120vh;
     
     /* Additional styles for parallax effect */
     perspective: 1000px; /* Adjust as needed */
@@ -411,74 +422,17 @@ button {
   .services-txt {
 	margin-top:.5rem;
 	margin-bottom: 1rem;
-	margin-left:2rem;
+	margin-left: 2rem;
 	margin-right: 2rem;
 	color: #cfcfcf;
 	text-align: justify;
 	hyphens: none;
   }
   
-  /* Cheeky CHAD media queries for vertical stacking... */
-  /* For smaller screens */
-  @media (max-width: 768px) {
-	.services-container {
-	  flex-direction: column; 
-	  align-items: center; 
-	}
-  
-	.services-box {
-	  width: 90%; 
-	  margin: 10px auto;
-	}
-  }
-  
-  /* For slightly larger screens */
-  @media (max-width: 900px) {
-	.services-container {
-	  display: flex;
-	  flex-direction: column;
-	  align-items: center;
-	  justify-content: center;
-	  text-align: center;
-	  height: 80%;
-	  width: 90%;
-	  margin-top: 20%;
-	  margin-bottom: 10%;
-	}
-	
-	.parallax2 {
-	  height: auto;
-	}
-  }
-  
-  
-@media screen and (min-width: 53em) {
-		.frame {
-			grid-template-columns: auto auto auto 1fr;
-			grid-template-areas: 'prev back sub sponsor' 'title title title title';
-		}
-		.frame #cdawrap {
-		  justify-self: end;
-		}
-		.card-wrap {
-			grid-template-columns: repeat(3,250px);
-		}
-		.w-25 {
-			width: 25vw;
-		}
 
-
-}	
 
 @media (max-width: 900px) {
     .glass-pane {
-        backdrop-filter: blur(10px) saturate(100%);
-        -webkit-backdrop-filter: blur(10px) saturate(100%);
-        background-color: rgba(17, 25, 40, 0.25);
-        border-radius: 12px;
-        border: 1px solid rgba(255, 255, 255, 0.125);  
-        padding: 38px;  
-        filter: drop-shadow(0 30px 10px rgba(0,0,0,0.125));
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -488,6 +442,7 @@ button {
         width:90%;
 		margin-top:10%;
 		margin-bottom:10%;
+		padding: 5px;
     }
     
     .parallax {
@@ -499,16 +454,28 @@ button {
 		font-size: 12vw;
 		position: relative; /* Position the element absolutely */
 		top: 0; /* Position at the top of its container */
-		padding-left:5%;
-		margin-bottom:10vh;
+		
+
 	}
 
 
 	h4 {
 		font-size: 12vw!important;
 	}
+	
+	.services-box{
+		width: calc(100% - 4px); /* Subtract the total margin (2px margin-left + 2px margin-right) */
+		margin-left: 2px;
+		margin-right: 2px;
+	}
+	
 
-
+	.services-txt {
+		margin-left: 3vw;
+		margin-right: 3vw;
+		text-align: justify;
+		hyphens: none;
+	}
 }
 
 
@@ -645,6 +612,7 @@ hr {border:2px solid #46413C; width: 100%; margin:0 auto;}
     font-family: 'AlegrosPersonalUse-qZL5qr', serif;
 	text-align: left;
 	text-transform: uppercase;
+	margin-bottom: 70px;
 }
 
 .evencent {
@@ -734,3 +702,65 @@ hr {border:2px solid #46413C; width: 100%; margin:0 auto;}
 	color:black;
 	font-style:oblique;
 }
+
+.form-control {
+	width: 100%;
+	margin:15px;
+	color: bisque;
+	background-color: #ffffff00;
+	border-radius: 50px;
+	padding:10px;
+}
+
+
+form {
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height:100%;
+}
+
+.form-margin {
+	margin-top: 250px;
+	margin-left: 20vw;
+	max-width: 950px;
+}
+
+.tab {
+	display: none;
+  }
+  
+  #progress-bar {
+	width: 100%;
+	background-color: #f0f0f0;
+	border-style: none;
+  }
+  
+  #progress-bar div {
+	height: 20px;
+	background-color: #46413C;
+  }
+  
+  #preferred-hours {
+	margin-top: 10px;
+  }
+  
+  .checkbox-label {
+    display: flex;
+    align-items: center;
+}
+
+.checkbox-label input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+#form-tabs {
+	height:40vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+
+}
+
