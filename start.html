@@ -64,13 +64,13 @@
 
 
 		<!-- main content -->
-		<main>
+		<main style="margin-top: 70px;">
             <section class="parallax">
 				<div class="glass-pane">
 					<h1>Start Your Dream Website</h1>
 					<h3>Please fill out the form below and we will get back to you as soon as possible.</h3>
                     <!-- form -->
-					<div id="start" style="width:60vw;" class="w3-center">
+					<form action="https://formsubmit.co/daviddragan377@gmail.com" method="POST" id="start" style="width:60vw;" class="w3-center">
 						<div id="progress-bar"></div>
 						<div id="form-tabs">
 						
@@ -104,7 +104,7 @@
 							<div class="tab" id="tab-4">
 								<div class="row">
 									<p>In a few words, describe what service you're after</p>
-									<textarea rows="4" cols="50" name="proj-desc" class="form-control" placeholder="Description"></textarea>
+									<textarea rows="4" cols="50" name="proj-desc" class="form-control-desc" placeholder="Description"></textarea>
 								</div>
 							</div>
 							<div class="tab" id="tab-5">
@@ -122,27 +122,19 @@
 							</div>
 							<div class="tab" id="tab-7">
 								<div class="row">
-									<p>What is the best way to reach you?</p>
-									<label><input type="checkbox" name="contactby" value="email"> E-mail</label>
-									<label><input type="checkbox" name="contactby" value="phone">Phone</label>
-									<div>
-										<p>Preferred hours if phone contact:</p>
-										<input type="text" name="pref-hrs" class="form-control" placeholder="Preferred hours">
-									</div>
+									<p>Submit form?</p>
+									
 								</div>
-							</div>
-							<div class="tab" id="tab-7">
-								<div class="row">
-									<button>Submit Form</button>
-								</div>
+								<button type="submit" class="form-control-btn">Submit</button>
 							</div>
 						</div>
 						<div class="inline">
-							<button onclick="prevTab()">Previous</button>
-							<button onclick="nextTab()">Next</button>
+							<button id="prev" type="button" onclick="prevTab()">Previous</button>
+							<button id="next" type="button" onclick="nextTab()">Next</button>
+							
 						</div>
 						
-					</div>
+					</form>
 
 				</div>
 			</section>
@@ -151,28 +143,8 @@
         <!-- footer -->
         <footer>
 			<div class="w3-panel w3-card-4 brown w3-round-xlarge">
-				<div class="content" >
-					<svg> 
-						<clipPath id="clip-9" >
-                            <text x="0ch" y="30%" dominant-baseline="middle" text-anchor="middle" class="font-7 size-4"> </text>
-                            <text x="1ch" y="30%" dominant-baseline="middle" text-anchor="middle" class="font-7 size-4"> </text>
-							<text x="2ch" y="30%" dominant-baseline="middle" text-anchor="middle" class="font-7 size-4"> </text>
-							<text x="3ch" y="30%" dominant-baseline="middle" text-anchor="middle" class="font-7 size-4">w</text>
-							<text x="4ch" y="30%" dominant-baseline="middle" text-anchor="middle" class="font-7 size-4">t</text>
-							<text x="5ch" y="30%" dominant-baseline="middle" text-anchor="middle" class="font-7 size-4">s</text>
-							<text x="6ch" y="30%" dominant-baseline="middle" text-anchor="middle" class="font-7 size-4">.</text>
-						
-						</clipPath>
-					</svg>
-					<div class="poster" style="clip-path:url(#clip-9);">
-						<div class="poster__inner">
-							<video preload muted autoplay loop>
-								<source src="img/dragon.mp4" type="video/mp4" />
-							</video>
-						</div>
-					</div>
-				</div>
-				<div class="w3-row margin">
+
+				<div class="w3-row inline" style="padding-top:40px">
 					<div class="w3-third center">
 						<p><a href="portfolio.html">Portfolio</a></p>
 					</div>
@@ -180,7 +152,7 @@
 						<p>Copyright &copy; <script>document.write(new Date().getFullYear());</script> - <a href="index.html">wts.</a></p>
 					</div>
 					<div class="w3-third center">
-						<p><a onClick="sendEmail()">Contact</a></p>
+						<p><a href="index.html#contact">Contact</a></p>
 					</div>
 				</div>
 			</div>
@@ -196,43 +168,7 @@
 	<script src="js/lenis.min.js"></script>
 	<script type="module" src="js/index.js"></script>
     <script>
-		var currentTab = 0;
-		showTab(currentTab);
-
-		function showTab(n) {
-		var tabs = document.getElementsByClassName("tab");
-		tabs[n].style.display = "block";
-		updateProgressBar(n);
 		
-		if (n == 7) {
-			document.getElementById("preferred-hours").style.display = "block";
-		} else {
-			document.getElementById("preferred-hours").style.display = "none";
-		}
-		}
-
-		function nextTab() {
-		var tabs = document.getElementsByClassName("tab");
-		if (currentTab < tabs.length - 1) {
-			tabs[currentTab].style.display = "none";
-			currentTab++;
-			showTab(currentTab);
-		}
-		}
-
-		function prevTab() {
-		var tabs = document.getElementsByClassName("tab");
-		if (currentTab > 0) {
-			tabs[currentTab].style.display = "none";
-			currentTab--;
-			showTab(currentTab);
-		}
-		}
-
-		function updateProgressBar(n) {
-		var progress = (n + 1) / document.getElementsByClassName("tab").length * 100;
-		document.getElementById("progress-bar").innerHTML = '<div style="width:' + progress + '%"></div>';
-		}
 
         // Used to toggle the menu on small screens when clicking on the menu button
         function myFunction() {
@@ -244,30 +180,50 @@
             }
         }
 
-		// Assuming you have an object containing form data
-		var formData = {
-			name: "John Doe",
-			email: "john@example.com",
-			message: "Hello, world!"
-		};
+		document.addEventListener("DOMContentLoaded", function() {
+		var currentTab = 0;
+		var tabs = document.getElementsByClassName("tab");
+		var nextButton = document.getElementById("next");
+		var prevButton = document.getElementById("prev");
 
-		// Convert the form data object to FormData
-		var formDataObject = new FormData();
-		for (var key in formData) {
-			formDataObject.append(key, formData[key]);
+		showTab(currentTab);
+
+		function showTab(n) {
+			for (var i = 0; i < tabs.length; i++) {
+				tabs[i].style.display = "none";
+			}
+			tabs[n].style.display = "block";
+			updateProgressBar(n);
+
+			// Enable or disable the previous button based on the current tab
+			prevButton.disabled = (n === 0);
 		}
 
-		// Send the form data via XHR
-		var xhr = new XMLHttpRequest();
-		xhr.open("POST", "https://formsubmit.co/daviddragan377@gmail.com", true);
-		xhr.setRequestHeader("Accept", "application/json");
-		xhr.onreadystatechange = function () {
-			if (xhr.readyState === 4 && xhr.status === 200) {
-				// Handle successful form submission
-				console.log("Form submitted successfully!");
+		function nextTab() {
+			if (currentTab < tabs.length - 1) {
+				currentTab++;
+				showTab(currentTab);
 			}
-		};
-		xhr.send(formDataObject);
+		}
+
+		function prevTab() {
+			if (currentTab > 0) {
+				currentTab--;
+				showTab(currentTab);
+			}
+		}
+
+		function updateProgressBar(n) {
+			var progress = (n + 1) / tabs.length * 100;
+			document.getElementById("progress-bar").innerHTML = '<div style="width:' + progress + '%"></div>';
+		}
+
+		// Assign functions to the global scope
+		window.nextTab = nextTab;
+		window.prevTab = prevTab;
+		
+	});
+	
 
     </script>
 

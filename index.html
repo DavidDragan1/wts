@@ -149,7 +149,7 @@
 			</section>
 
 			<!-- Services section start -->
-			<section class="parallax2">
+			<section id="services" class="parallax2">
 				<div class="glass-pane">
 					<h1>Our Services</h1>
 					<h3>How we can help you flourish</h3>
@@ -189,24 +189,18 @@
 			
 
 			<!-- contact -->
-			<section id="contact" class="w3-row">
-				<div class="w3-half">
-					<form class="form-margin" target="_blank" action="https://formsubmit.co/daviddragan377@gmail.com" method="POST">
-						<div class="w3-col w3-center">
-							<div class="row">
-								<input type="text" name="name" class="form-control" placeholder=" Your Name" required>
-							</div>
-							<div class="row">
-								<input type="email" name="email" class="form-control" placeholder=" Email Address" required>
-							</div>
-							<div class="row">
-								<input type="tel" name="phone" class="form-control" placeholder=" Phone Number" required>
-							</div>
+			<section id="contact" class="w3-row ">
+				<div class="w3-half w3-hide-small">
+					<form class="form-margin w3-center" target="_blank" action="https://formsubmit.co/daviddragan377@gmail.com" method="POST">
+						
+							<input type="text" name="name" class="form-control" placeholder=" Your Name" required>
+						
+							<input type="email" name="email" class="form-control" placeholder=" Email Address" required>
+						
+							<input type="tel" name="phone" class="form-control" placeholder=" Phone Number" required>
+
+							<button type="submit" class="form-control-btn">Submit</button>
 							
-							<div class="row w3-center">
-								<button type="submit" style="background-color:#46413C"class="form-control">Submit</button>
-							</div>
-						</div>
 					</form>
 				</div>
 
@@ -219,6 +213,28 @@
 						<button onclick="sendEmail()">Email<i class="bi bi-arrow-up-right"></i></button>
 					</div>
 				</div>
+
+				
+				<!-- Form for smaller screens -->
+				<div class="w3-half w3-hide-large w3-hide-medium content content--text">
+					<form target="_blank" class="margin" action="https://formsubmit.co/daviddragan377@gmail.com" method="POST">
+						<div class="w3-row">
+							<input type="text" name="name" class="form-control" placeholder=" Your Name" required>
+						</div>
+						<div class="w3-row">
+							<input type="email" name="email" class="form-control" placeholder=" Email Address" required>
+						</div>
+						<div class="w3-row">
+							<input type="tel" name="phone" class="form-control" placeholder=" Phone Number" required>
+						</div>
+						
+						
+						<button type="submit" style="background-color:#46413C" class="form-control">Submit</button>
+					
+					</form>
+				</div>
+		
+
 			</section>
 
 		</main>
